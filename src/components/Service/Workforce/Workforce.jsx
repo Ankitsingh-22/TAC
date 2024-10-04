@@ -141,10 +141,10 @@ export default function OnCampus() {
                   fontWeight="bold"
                   p="2"
                 >
-                  <Text as="span" color="black">
+                  <Text as="span" color="#003B5C">
                     Why Should You
                   </Text>
-                  <Text as="span" color="blue.400">
+                  <Text as="span" color="#F4A460">
                     {' '}Choose Us?
                   </Text>
                 </Heading>

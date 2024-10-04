@@ -156,10 +156,10 @@ export default function CareerCraft() {
                   fontWeight="bold"
                   p="2"
                 >
-                  <Text as="span" color="black">
+                  <Text as="span" color="#303048">
                     How CareerCraft Can
                   </Text>
-                  <Text as="span" color="blue.400">
+                  <Text as="span" color="#F8BE2F">
                     {' '}Transform Your Professional Journey?
                   </Text>
                 </Heading>

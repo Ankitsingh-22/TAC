@@ -35,10 +35,10 @@ const Section3 = () => {
           fontWeight="bolder"
           textAlign="center"
         >
-          <Text as="span" color="black">
+          <Text as="span" color="purple.600">
             Explore Our Proven
           </Text>
-          <Text as="span" color="blue.400">
+          <Text as="span" color="#FFFFFF">
             {" "}OffCampus Solution
           </Text>
         </Heading>

@@ -33,7 +33,7 @@ const Section3 = () => {
         fontFamily={"ClashDisplay"}
         fontSize={useBreakpointValue({ base: "2xl", sm: "3xl", "2xl": "5xl", "3xl": "7xl" })}
         fontWeight="bold"
-        color="black"
+        color="#1E3A8A"
         textAlign="center"
         mb={10}
         mt={10}
@@ -46,7 +46,7 @@ const Section3 = () => {
         fontFamily={"ClashDisplay"}
         fontSize={useBreakpointValue({ base: "2xl", sm: "3xl", "2xl": "5xl", "3xl": "7xl" })}  
         fontWeight="bold"
-        color="blue.400"
+         color="#FFA500"
         textAlign="center"
         mb={10}
         mt={10}

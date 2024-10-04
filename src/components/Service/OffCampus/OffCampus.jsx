@@ -147,10 +147,10 @@ export default function OffCampus() {
                   fontWeight="bold"
                   p="2"
                 >
-                  <Text as="span" color="black">
+                  <Text as="span" color="#FFFFFF">
                     TalentConnect:
                   </Text>
-                  <Text as="span" color="blue.400">
+                  <Text as="span" color="purple.600">
                     {' '}Your Partner in OffCampus Success
                   </Text>
                 </Heading>

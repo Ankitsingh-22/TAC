@@ -37,10 +37,10 @@ const Section3 = () => {
           fontWeight="bolder"
           textAlign="center"
         >
-          <Text as="span" color="black">
+          <Text as="span" color="#303048">
           CareerCraft’s
           </Text>
-          <Text as="span" color="blue.400">
+          <Text as="span" color="#F8BE2F">
             {" "}Key Benefits
           </Text>
         </Heading>

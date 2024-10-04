@@ -43,7 +43,7 @@ const Section3 = () => {
           textAlign="center"
         >
           <Text as="span" color="black">
-          Our Unique Offerings
+          Our Unique
           </Text>
           <Text as="span" color="blue.400">
             {" "}Offerings

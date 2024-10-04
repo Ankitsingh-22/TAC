@@ -141,16 +141,18 @@ export default function OnCampus() {
                 fontFamily="ClashDisplay"
                 fontSize={useBreakpointValue({ base: "2xl", md: "xl", lg: "4xl", xl: "4xl", "2xl": "5xl", "3xl": "6xl" })}
                 fontWeight="bold"
-                color="black"
+                color="#1E3A8A"
                 p={0}
               >
                 Why Should You
+              
               </Heading>
               <Heading
                 fontFamily="ClashDisplay"
                 fontSize={useBreakpointValue({ base: "2xl", md: "xl", lg: "4xl", xl: "4xl", "2xl": "5xl", "3xl": "6xl" })}
                 fontWeight="bold"
-                color="blue.400"
+                color="#FFA500"
+                mr={{base:"6","3xl":"10"}}
               >
                  Hire Us?
               </Heading>

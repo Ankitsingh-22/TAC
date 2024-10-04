@@ -42,11 +42,11 @@ const Section4 = () => {
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Flex justifyContent="center" alignItems="center">
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text  fontFamily={"ClashDisplay"} color={"black"}>
+            <Text  fontFamily={"ClashDisplay"} color="#2A4365">
              Questions?
              Collaborations?
             </Text>  
-            <Text  fontFamily={"ClashDisplay"} color={"blue.400"}>
+            <Text  fontFamily={"ClashDisplay"}  color="#FC8E53">
              Let's Talk.
             </Text> 
                       
