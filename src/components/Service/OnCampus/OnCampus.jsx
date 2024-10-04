@@ -154,7 +154,7 @@ export default function OnCampus() {
                 color="#FFA500"
                 mr={{base:"6","3xl":"10"}}
               >
-                 Hire Us?
+                 {' '} Hire Us?
               </Heading>
             </Flex>
             <Text
