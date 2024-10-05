@@ -109,7 +109,7 @@ export default function OnCampus() {
       {/* Section 2 */}
       <Flex
         w="full"
-        h={useBreakpointValue({ base: "66vh", md: "74vh", lg: "80vh", xl:"80vh", "2xl": "65vh", "3xl": "55vh" })}
+        h={useBreakpointValue({ base: "100%", md: "74vh", lg: "80vh", xl:"80vh", "2xl": "65vh", "3xl": "55vh" })}
         backgroundImage={
           'url(https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
         }
@@ -133,7 +133,7 @@ export default function OnCampus() {
             borderRadius="md"
             textAlign="left"
             color="black"
-            w={useBreakpointValue({ base: "full", md: "60%", lg: "60%", xl: "35%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
+            w={useBreakpointValue({ base: "full", md: "60%", lg: "60%", xl: "45%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
             h="100%" // Ensures the height matches the image
           >
             <Flex justifyContent="center" alignItems="center">
@@ -143,6 +143,7 @@ export default function OnCampus() {
                 fontWeight="bold"
                 color="#1E3A8A"
                 p={0}
+                mr={useBreakpointValue({base: 2,'3xl': 10 })}
               >
                 Why Should You
               
@@ -152,9 +153,8 @@ export default function OnCampus() {
                 fontSize={useBreakpointValue({ base: "2xl", md: "xl", lg: "4xl", xl: "4xl", "2xl": "5xl", "3xl": "6xl" })}
                 fontWeight="bold"
                 color="#FFA500"
-                mr={{base:"6","3xl":"10"}}
               >
-                 {' '} Hire Us?
+                {' '} Hire Us?
               </Heading>
             </Flex>
             <Text

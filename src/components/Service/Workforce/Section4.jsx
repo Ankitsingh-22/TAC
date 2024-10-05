@@ -25,7 +25,7 @@ const Section4 = () => {
             position="relative"
             overflow="hidden"
             transition="transform 0.5s ease"
-            _hover={{ transform: "scale(1.1)" }}
+            // _hover={{ transform: "scale(1.1)" }}
           >
             <Image
               alt={"Section 4 Image"}

@@ -26,7 +26,7 @@ const Section4 = () => {
             position="relative"
             overflow="hidden"
             transition="transform 0.5s ease"
-            _hover={{ transform: "scale(1.1)" }}
+            // _hover={{ transform: "scale(1.1)" }}
           >
             <Image
               alt={"Section 4 Image"}
@@ -46,7 +46,7 @@ const Section4 = () => {
              Questions?
              Collaborations?
             </Text>  
-            <Text  fontFamily={"ClashDisplay"} color={"blue.400"}>
+            <Text  fontFamily={"ClashDisplay"} color={"white"}>
              Let's Talk.
             </Text> 
                       

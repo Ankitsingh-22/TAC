@@ -111,7 +111,7 @@ export default function OnCampus() {
         <Flex
            mt={{ base: 5, md: 10 }} // Responsive margin-top
           w="full"
-          h={useBreakpointValue({ base: "66vh", md: "60vh", lg: "80vh", xl:"80vh", "2xl": "60vh", "3xl": "55vh" })}
+          h={useBreakpointValue({ base: "66vh", md: "60vh", lg: "80vh", xl:"72vh", "2xl": "60vh", "3xl": "55vh" })}
           backgroundImage="url(https://images.unsplash.com/photo-1686771416282-3888ddaf249b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
           backgroundSize="cover"
           backgroundPosition="center center"
@@ -131,7 +131,7 @@ export default function OnCampus() {
               bg="blue.50"
               p={useBreakpointValue({base:2, xl: 6})}
               borderRadius="md"
-              w={useBreakpointValue({ base: "full", md: "70%", lg: "60%", xl: "35%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
+              w={useBreakpointValue({ base: "full", md: "70%", lg: "60%", xl: "45%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
               h="100%"
             >
               <Flex justifyContent="center" alignItems="center">

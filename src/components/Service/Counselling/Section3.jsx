@@ -35,7 +35,7 @@ const Section3 = () => {
           fontWeight="bolder"
           textAlign="center"
         >
-          <Text as="span" color="blue.400">
+          <Text as="span" color="white">
             {" "}Benefits
           </Text>
         </Heading>

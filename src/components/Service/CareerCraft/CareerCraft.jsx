@@ -119,7 +119,7 @@ export default function CareerCraft() {
         <Flex
           mt={{ base: 5, md: 10 }} // Responsive margin-top
           w="full"
-          h={useBreakpointValue({ base: "66vh", md: "60vh", lg: "80vh", xl:"80vh", "2xl": "60vh", "3xl": "55vh" })}
+          h={useBreakpointValue({ base: "66vh", md: "60vh", lg: "80vh", xl:"74vh", "2xl": "60vh", "3xl": "55vh" })}
           backgroundImage={
             'url(https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg)'
           }
@@ -146,7 +146,7 @@ export default function CareerCraft() {
               borderRadius="md"
               textAlign="left"
               color="black"
-              w={useBreakpointValue({ base: "full", md: "70%", lg: "60%", xl: "35%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
+              w={useBreakpointValue({ base: "full", md: "70%", lg: "60%", xl: "45%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
               h="100%" // Ensures the height matches the image
             >
               <Flex justifyContent="center" alignItems="center">

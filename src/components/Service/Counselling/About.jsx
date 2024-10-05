@@ -118,7 +118,7 @@ function ProgramDetails() {
     <Flex
       // mt={{ base: 10 }} // Responsive margin-top
       w="full"
-      h={useBreakpointValue({ base: "66vh", md: "60vh", lg: "80vh", xl:"80vh", "2xl": "60vh", "3xl": "55vh" })}
+      h={useBreakpointValue({ base: "66vh", md: "50vh", lg: "80vh", xl:"66vh", "2xl": "60vh", "3xl": "55vh" })}
       backgroundImage={
         'url(https://images.unsplash.com/photo-1653566031587-74f7d86a2e71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxKb2IlMjBjb3Vuc2VsaW5nfGVufDB8fDB8fHww)'
       }
@@ -135,17 +135,17 @@ function ProgramDetails() {
         h="full" // Matches the height of the image
         justify="center"
         alignItems="flex-start" // Aligns content to the left
-        px={useBreakpointValue({ base: 4, md: 0, lg: 0, xl: "0", "2xl": "0", "3xl": "0" })}
+        px={useBreakpointValue({ base: 4, md: 4, lg: 0, xl: "0", "2xl": "0", "3xl": "0" })}
         bgGradient="linear(to-r, blackAlpha.600, transparent)" // Gradient from left to transparent
       >
 
         <Box
           bg="#D7D7F9"
-          p={useBreakpointValue({base:2, xl: 6})}
+          p={useBreakpointValue({base:2,md: 3, xl: 6})}
           borderRadius="md"
           textAlign="left"
           color="black"
-          w={useBreakpointValue({ base: "full", md: "70%", lg: "60%", xl: "35%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
+          w={useBreakpointValue({ base: "full", md: "full", lg: "60%", xl: "45%", "2xl": "50%", "3xl": "40%"  })} // Width for the text box
           h="100%" // Ensures the height matches the image
         >
           <Flex justifyContent="center" alignItems="center">

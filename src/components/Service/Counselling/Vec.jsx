@@ -1,4 +1,4 @@
-import { Box, Text, keyframes } from "@chakra-ui/react";
+import { Box, Text, keyframes, useBreakpointValue} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 // Define the floating animation keyframes
@@ -15,14 +15,14 @@ const FuturePoint = ({ point, index, position }) => {
     <Box
       position="absolute"
       animation={`${floatAnimation} ${3 + index}s ease-in-out infinite`}
-      left={{ base: mobileLeft, md: left }}
-      top={{ base: mobileTop, md: top }}
+      left={{ base: mobileLeft, md: mobileLeft, lg: left }}
+      top={{ base: mobileTop, md: mobileTop, lg: top }}
       transform={{
         base: `rotate(${index * 60}deg) translate(90px) rotate(-${index * 60}deg)`, // Mobile adjustments
         md: `rotate(${index * 60}deg) translate(180px) rotate(-${index * 60}deg)`, // Larger screens
       }}
       bgGradient="linear(to-r, blue.400, teal.300)"
-      p={[2, 4]} 
+      p={useBreakpointValue({base: 2,sm: 3,md: 3, lg: 2, xl: 4})} 
       borderRadius="80px"
       shadow="lg"
       _hover={{
@@ -40,7 +40,8 @@ const FuturePoint = ({ point, index, position }) => {
         color="white"
         fontWeight="bold"
         textAlign="center"
-        fontSize={["sm", "md", "lg"]} 
+        fontSize={useBreakpointValue({base:"xs",md: "md",lg: "md", xl: "lg"})} 
+        
       >
         {point}
       </Text>
@@ -68,7 +69,7 @@ const AnimatedFuturePoints = () => {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      p={[2, 4]} // Adjust padding for smaller screens
+      p={useBreakpointValue({base: 8,sm: 6, md: 6, lg: 4})} // Adjust padding for smaller screens
       height="100vh"
       bgGradient="linear(to-b, transparent)"
       mt={10}
@@ -78,7 +79,7 @@ const AnimatedFuturePoints = () => {
         as="img"
         src="https://i.postimg.cc/zBxxQCLL/Screenshot-2024-09-11-170518-removebg-preview.png"
         alt="Thinking character"
-        boxSize={["180px", "150px", "250px"]} // More refined sizes for responsiveness
+        boxSize={useBreakpointValue({base: "130px",sm: '130px',md: "140px",lg:"150px", xl: "250px"})} // More refined sizes for responsiveness
         objectFit="cover"
         zIndex={1}
         position="relative"

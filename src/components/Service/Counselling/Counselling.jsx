@@ -21,7 +21,7 @@ export default function OnCampus() {
     <>
    <Flex
       direction="column"
-      bg="#D7D7F9"// Set background color here
+      bgGradient="linear(to-br, blue.300, purple.200)"// Set background color here
     >
 
       <Hero />

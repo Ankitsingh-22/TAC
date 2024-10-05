@@ -16,7 +16,9 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { HashLink as Link } from "react-router-hash-link";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom"; // Use NavLink to prevent refresh
+
+// import { useLocation } from "react-router-dom";
 
 const NAV_ITEMS = [
   {
@@ -175,20 +177,21 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
     </Link>
   );
 };
+ 
 
-const MobileNav = () => {
+const MobileNav = ({ onClose }) => {
   const bg = useColorModeValue("white", "gray.800");
 
   return (
     <Stack bg={bg} p={4} display={{ lg: "none" }}>
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
+        <MobileNavItem key={navItem.label} {...navItem} onClose={onClose} />
       ))}
     </Stack>
   );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ label, children, href, onClose }) => {
   const { isOpen, onToggle } = useDisclosure();
   const textColor = useColorModeValue("gray.600", "gray.200");
   const hoverColor = useColorModeValue("blue.400", "blue.300");
@@ -196,10 +199,14 @@ const MobileNavItem = ({ label, children, href }) => {
   const activeTabBgColor = useColorModeValue("teal.50", "white.700");
   const isActive = pathname === href || (children && children.some(child => pathname === child.href));
 
+  const handleLinkClick = (e) => {
+    onClose(); // Close the mobile menu
+  };
+
   return (
     <Stack spacing={4} onClick={children ? onToggle : undefined}>
       <Flex
-        as={Link}
+        as={NavLink} // Ensure you're using NavLink
         to={href ?? "#"}
         py={2}
         justify="space-between"
@@ -214,6 +221,7 @@ const MobileNavItem = ({ label, children, href }) => {
         }}
         borderBottom={isActive ? "4px solid" : "none"}
         borderColor={hoverColor}
+        onClick={children ? onToggle : handleLinkClick}
       >
         <Text fontWeight={600}>{label}</Text>
         {children && (
@@ -243,7 +251,7 @@ const MobileNavItem = ({ label, children, href }) => {
           {children &&
             children.map((child) => (
               <Box
-                as={Link}
+                as={NavLink}
                 key={child.label}
                 py={2}
                 to={child.href}
@@ -259,6 +267,7 @@ const MobileNavItem = ({ label, children, href }) => {
                 }}
                 borderBottom={pathname === child.href ? "2px solid" : "none"}
                 borderColor={hoverColor}
+                onClick={handleLinkClick} // Ensure menu closes after clicking a child link
               >
                 {child.label}
               </Box>
@@ -268,6 +277,8 @@ const MobileNavItem = ({ label, children, href }) => {
     </Stack>
   );
 };
+
+
 
 const Navigation = () => {
   return (
@@ -281,4 +292,3 @@ const Navigation = () => {
 export default Navigation;
 
 export { DesktopNav, MobileNav };
-

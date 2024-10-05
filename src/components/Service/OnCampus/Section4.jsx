@@ -26,7 +26,7 @@ const Section4 = () => {
             position="relative"
             overflow="hidden"
             transition="transform 0.5s ease"
-            _hover={{ transform: "scale(1.1)" }}
+            // _hover={{ transform: "scale(1.1)" }}
           >
             <Image
               alt={"Section 4 Image"}
@@ -63,7 +63,7 @@ const Section4 = () => {
               rounded={"full"}
               bg={"gray.500"}
               color={"white"}
-              _hover={{ transform: "scale(1.05)", boxShadow: "lg" , bg: "blue.300", color:"white"}}
+              _hover={{  boxShadow: "lg" , bg: "blue.300", color:"white"}}
             >
               Connect With Us
             </Button>
